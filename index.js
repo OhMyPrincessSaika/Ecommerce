@@ -28,7 +28,7 @@ app.use('/api/category',categoryRouter)
 app.use('/api/blog-category',blogCategoryRouter)
 app.use('/api/brand-category',brandCategoryRouter)
 app.use('/api/coupon',couponRouter);
-
+app.use('/',()=> "Hello World")
 app.use(notFoundMiddleware)
 app.use(errorHandler);
 const start = async () => {
